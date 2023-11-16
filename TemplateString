@@ -1,0 +1,24 @@
+<!--O que uma “template string” permite é a injeção de variáveis em uma declaração. Vamos ao Exemplo:-->
+´´´js
+  const postTitle = ‘É bolacha ou biscoito?’;
+  const postAuthor = ‘Matheus Saad’;
+  const postComments = 15;
+
+//usando concatenação
+  const postMessage = ‘O post “ ’ + postTitle + ‘ ”, do ‘ + postAuthor + ‘, tem ‘ + postComments + ‘ comment ’
+  console.log(postMessage);
+
+//Pode “escapar” das strings usando \\ entre as palavras (‘\Assim\’)
+//usando templates strings – injetar variáveis (uso de crases)
+  const postMessage = `O post “${postTitle}”, do ${postAuthor}, tem ${postComments} comentarios.`;
+  const (postMessage);
+
+//criando templates HTML
+  const html = `
+	  <h2>${postTitle}</h2>
+	  <p>Autor: ${postAuthor}</p>
+	  <span>Este post tem: ${postComments} comentários</span>
+  `
+  console.log(html)
+//O templates HTML é exibido usando conteúdo dinâmico
+´´´
